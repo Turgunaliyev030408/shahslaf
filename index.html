@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shaxslar</title>
+
+  
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+<body class="font-sans bg-gray-100">
+
+  <div class="container mx-auto p-8">
+    <h1 class="text-4xl text-center font-bold text-gray-800 mb-8">Shaxslar</h1>
+
+    <form id="shaxsForm" class="max-w-md mx-auto bg-white p-8 rounded-md shadow-md">
+      <div class="mb-4">
+        <label for="familya" class="block text-sm font-medium text-gray-600 mb-2">Familya:</label>
+        <input type="text" id="familya" name="familya" required class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+      </div>
+      <div class="mb-6">
+        <label for="ism" class="block text-sm font-medium text-gray-600 mb-2">Ism:</label>
+        <input type="text" id="ism" name="ism" required class="w-full px-3 py-2 border rounded-md focus:outline-none focus:border-blue-500">
+      </div>
+      <button type="button"  class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 focus:outline-none focus:border-green-700">Qo'shish</button>
+    </form>
+
+    <ul id="shaxslarList" class="mt-8 space-y-4"></ul>
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
